@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01HighOrderFunc</title>
+  </head>
+  <body>
+    <script>
+    const square = function(x) {
+      return x * x;
+    }    
+    square(5); 
+    const foo = square; 
+    foo(6); 
+
+    function formalGreeting() {
+      console.log('How are you?');
+    }
+    function casualGreeting() {
+      console.log("what's up?");
+    }
+    function greet(type, greetFormal, greetCasual) {  
+      if(type === 'formal') {
+        greetFormal();
+      } else if(type === 'casual') {
+        greetCasual();
+      }
+    }
+    greet('casual', formalGreeting, casualGreeting); 
+  </script>
+  </body>
+</html>

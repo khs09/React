@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01forEachFunc.html</title>
+  </head>
+  <body>
+  <script>
+    function forEachTest1(){
+      console.error("forEachTest1() called..기본사용법");
+      var oldArray = [1,2,3,4,5];
+      oldArray.forEach(function(currentVal, index, array){
+        console.log('현재값:'+currentVal, '인덱스:'+index, '배열:'+array);
+      });
+    };
+
+    function forEachTest2(){
+      console.error("forEachTest2() called..배열 요소의 합계");
+      var oldArray = [1,2,3,4,5];
+      var sum = 0;
+      function getSum(currentVal){
+        sum += currentVal;
+      }
+      oldArray.forEach(getSum);
+      console.log(sum);
+    }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "D2coding, Consolas, 'Courier New', monospace",
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.variables": {
+      "lang": "ko",
+      "charset": "UTF-8",
+      "locale": "ko-KR"
+  },
+  "editor.fontSize": 16,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "editor.tabSize": 2,
+  "editor.mouseWheelZoom": true
+}
