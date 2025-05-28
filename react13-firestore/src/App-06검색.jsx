@@ -11,7 +11,7 @@ function App() {
     let getRows = [];
 
     if(sField==='id'){
-      const docRef = doc(firestore, "members", sStr);
+      const docRef = doc(firestore, "member", sStr);
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         getRows.push(docSnap.data());
@@ -45,7 +45,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className='App'>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
       <h2>Firebase - Firestore 연동 App</h2>
       <h3>검색하기</h3>
@@ -55,7 +55,7 @@ function App() {
         let ss = e.target.searchStr.value;
         getCollection(sf, ss);
       }}>
-        <div className="input-group" id="myForm">
+        <div class="input-group" id="myForm">
           <select name="searchField" className="form-control">
             <option value="id">아이디</option>
             <option value="name">이름</option>
